@@ -1,0 +1,60 @@
+@font-face {
+	src: url("./BarlowCondensed-Regular.ttf") format("truetype");
+	font-family: "Barlow Condensed";
+}
+
+@font-face {
+	src: url("./BarlowCondensed-Bold.ttf") format("truetype");
+	font-family: "Barlow Condensed Bold";
+}
+
+b {
+	font-family: "Barlow Condensed Bold";
+}
+
+a {
+	color: darkcyan;
+}
+a:hover {
+	color: cyan;
+}
+
+body {
+	font-family: "Barlow Condensed"; 
+	background-color: darkslateblue;
+	top: 0; 
+	position: absolute; 
+	margin-top: 0; 
+	margin-bottom: 0;
+	font-size: 120%;
+}
+
+code {
+	font-family: "Fira Code";
+}
+
+img {
+	color: darkred;
+	vertical-align: middle;
+}
+
+h1 {
+	margin: 0;
+	font-family: "Barlow Condensed Bold";
+}
+
+h2 {
+	font-family: "Barlow Condensed Bold";
+}
+
+h3 {
+	font-family: "Barlow Condensed Bold";
+}
+
+.Footer {
+	font-size: 75%;
+}
+
+.warning {
+	color: olive;
+}

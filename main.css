@@ -58,3 +58,7 @@ h3 {
 .warning {
 	color: olive;
 }
+
+.centered {
+	float: center;
+}

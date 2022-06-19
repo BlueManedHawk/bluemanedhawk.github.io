@@ -20,7 +20,7 @@ a:hover {
 }
 
 body {
-	font-family: "Barlow Condensed"; 
+	font-family: "Barlow Condensed";
 	background-color: darkslateblue;
 	top: 0; 
 	position: absolute; 
@@ -55,10 +55,30 @@ h3 {
 	font-size: 75%;
 }
 
+.caution {
+	color: #bb4;
+}
+
 .warning {
-	color: olive;
+	color: #d84; /* This is stupid—dark orange is just brown!  Oh my god, my web color highlightin plugin highlights inside of comments.  Anyway, go see Technology Connections's video on brown:  https://youtu.be/wh4aWZRtTwU */
+}
+
+.danger {
+	color: #d80000;
+}
+
+
+@keyframes flashwhite {
+	50% {
+		color: white
+	}
+}
+
+.criticaldanger {
+	color: red;
+	animation: 2s step-start /* Ah, nice and retro-looking.*/ infinite flashwhite;
 }
 
 .centered {
-	float: center;
+	/* I cannot figure out how to get this right without using some bloaty crap like Fleshbox.  If you happen to know, do get it touch. */
 }

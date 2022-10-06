@@ -13,20 +13,21 @@ b {
 }
 
 a {
-	color: darkcyan;
+	color: firebrick;
 }
 a:hover {
-	color: cyan;
+	color: lightcoral;
 }
 
 body {
 	font-family: "Barlow Condensed";
-	background-color: darkslateblue;
-	top: 0; 
-	position: absolute; 
-	margin-top: 0; 
+	background-color: midnightblue;
+	top: 0;
+	position: absolute;
+	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 120%;
+	color: darkgrey;
 }
 
 code {
@@ -34,7 +35,7 @@ code {
 }
 
 img {
-	color: darkred;
+	color: red;
 	vertical-align: middle;
 }
 
@@ -60,7 +61,7 @@ h3 {
 }
 
 .warning {
-	color: #d84; /* This is stupid—dark orange is just brown!  Oh my god, my web color highlightin plugin highlights inside of comments.  Anyway, go see Technology Connections's video on brown:  https://youtu.be/wh4aWZRtTwU */
+	color: #d84; /* This is stupid—dark orange is just brown!  Technology Connections has a video on it:  https://youtu.be/wh4aWZRtTwU */
 }
 
 .danger {

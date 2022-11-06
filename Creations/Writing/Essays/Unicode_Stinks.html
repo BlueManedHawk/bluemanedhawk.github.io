@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unicode Stinks | Essays | Writing | Creations | Blue-Maned_Hawk's Website</title>
+		<link rel=icon href=../../../icon.png />
+		<meta charset=utf-8 />
+		<link rel=stylesheet href=../../../main.css>
+	</head>
+	<body>
+		<div align=center>
+			<h1>Unicode Stinks</h1>
+			<p class=subtitle>An essay by Blue-Maned_Hawk</p>
+			<p class=back>(<a href=../../../index.html>Back to the main page</a> | <a href=./Unicode_Stinks.pdf>PDF</a> | <a href=./Unicode_Stinks.odt>Source</a> | <a href=./Old_Revisions/Unicode_Stinks.0.html>Previous Revision</a> | <a href=./Old_Revisions/Unicode_Stinks.0.odt>Source of previous revision</a>)</p>
+		</div>
+		<p>
+		Unicode is the single most widely-used standard for encoding text on computer systems. It is significantly better than everything that came before it; instead of a computer needing to juggle eighty different ways to interpret a piece of text, it only needs to deal with one standard that comprehensively contains damn near every writing system in the world. This has significantly improved the computing world, and Unicode is certainly one of the best inventions in recent times.
+		</p><p>
+		However, just because Unicode is better than everything else doesn't mean it's good. There are flaws both in the design of the standard and in how it is maintained. It has many redundant or unnecessary characters, it's extremely complicated in how it works, its scope is inconsistent, and it's absolute commitment to backwards-compatibility means that many of the flaws it has can never be fixed. There is so much room for improvement, and in this essay i seek to descibe what a replacement could look like.
+		</p><p>
+		A replacement ought to use a fixed-width thirty-two bit encoding; this will ensure that plenty of space is available for new characters (though the most significant bit should be reserved just in case), and any reasonably good compression scheme would counteract the space taken up by such large characters. A fixed-width system also simplifies parsing significantly. The characters under this standard ought to be assigned to codepoints hierarchically.
+		</p><p>
+		One thing that i think this encoding ought to have is to mark certain characters as invalid—not noncharacters, not reserved or unassigned characters, not private-use characters, but completely and entirely invalid. I think that good candidates for these would be any character where any of the bytes (by which i mean sequence of eight bits aligned to an eight-bit boundary) is empty, full, or alternating. This would mean that, for example, a binary file couldn't be misinterpreted as a text file, or in an embedded system a jump to a zeroed-out section wouldn't be seen as real characters.
+		</p><p>
+		This new encoding ought to take advantage of character composition more than Unicode does—for example, instead of having an analog to Unicode's Mathematical Alphanumeric Symbols block, it could have variation selectors for specifying that a character ought to be rendered in serif or bold or monospace. Variation selectors could also be used in a number of other places—for example, to specify whether a zero should be rendered with a slash or a dot in it.
+		</p><p>
+		Whatever group maintains this standard must be okay with breaking backward-compatibility from time to time. The preservation of back-compat may be useful, but it cannot be done ad infinitum. In all things, historical cruft will build will build up, and eventually an effort must be made to combat this for the betterment of the users of the system.
+		</p><p>
+		I don't have a good way to end this essay.
+		</p><p>
+		ANGZARR ⍼
+		</p>
+	</body>
+</html>

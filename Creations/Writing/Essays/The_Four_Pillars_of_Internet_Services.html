@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Four Pillars of Internet Services | Essays | Writing | Creations | Blue-Maned_Hawk's Website</title>
+		<link rel=icon href=../../../icon.png />
+		<meta charset=utf-8 />
+		<link rel=stylesheet href=../../../main.css />
+	</head>
+	<body>
+		<div align=center>
+			<h1>The Four Pillars of Internet Services</h1>
+			<p class=subtitle>An Essay by Blue-Maned_Hawk</p>
+			<p class=back>(<a href=../../../index.html>Back to the main page</a> | <a href=./The_Four_Pillars_of_Internet_Services.pdf>PDF version</a> | <a href=./The_Four_Pillars_of_Internet_Services.odt>Source</a>)</p>
+		</div>
+		<h2>Introduction</h2>
+		<p>
+		To me, there are four primary types of services on the internet, of which most services are some kind of variation:
+		</p>
+		<ul>
+			<li>Forums</li>
+			<li>Chat rooms</li>
+			<li>Blogs</li>
+			<li>File hosts</li>
+		</ul>
+		<p>
+		These four types of services are all critically important pieces of infrastructure for a well-functioning society. But in the modern world, these services are a disaster. There are too many who provide these services, leading to an overabundance of choice. Each one does things in ways that are often slightly and sometimes drastically different from one another. Nothing is compatible with anything else, and nothing is unified.
+		</p><p>
+		What i propose in this essay is a unified set of protocols for each of these things. With unification, our world can become more connected. And with unification, all efforts to make these things better can be concentrated into a single thing that combines the best of the best, instead of having all improvements spread across multiple sites and all locked behind intellectual property laws.
+		</p><p>
+		Each of these protocols will have certain requirements unique to it, but there are some requirements that they all would share:
+		</p>
+		<ul>
+			<li>These protocols must be standardized, and standarized well. The group behind the standardization must operate ethically, and they need to allow external forces to submit proposals for change. They must preserve back-compat when they can, but need to be willing to break it in the rare occasions it's necessary. They must design the standards behind the protocols in a way that not only allows for but explicitly supports extensions.</li>
+			<li>All of these protocols must be interconnected.</li>
+			<li>These protocols need to be decentralized. I don't just mean federation—i mean completely and totally distributed. It needs to be impossible for one person to go rogue and bring down their chunk of the network. It needs to be impossible for one to take something down without mass destruction or a solar flare. It must be completely impossible for something to be removed once it is sent, ever.</li>
+			<li>These protocols need to be completely secure.</li>
+			<li>It must be possible for somebody to construct, secure, maintain, and lose an identity within these services. But this must not be mandatory—anonymity needs to be allowed.</li>
+			<li>It must be possible to submit private entries to these services. These would only be accessible if one has the password for them. An important implication of this is the existence of direct contact with other users.</li>
+			<li>These protocols must allow for the original submitter of a particular entry to modify it later (with the history of edits being preserved, of course).</li>
+			<li>There must be strong antispam protections in place. However, these need to be well-designed, and the methods by which they work must be open, so that someone who is making genuine contributions won't have their entries disappear into the ether without their knowledge, and will be able to modify them so that they won't trigger the systems. These protections mustn't apply retroactively, so as not to be unfair.</li>
+			<li>These protocols must allow for people to mark potentially-discomforting content within their entries, and must allow for communal marking of this content in others' entries (this would be the ONLY instance where communal editing is allowed). (When i refer to potentially-discomforting content, i am mainly referring to sexual content, graphic content, spoilerous content, and heavy-hitting content. I plan to write a separate essay discussing this topic at some point.)</li>
+		</ul>
+		<p>
+		With all of that out of the way, let's discuss what would be required of the individual protocols.
+		</p>
+		<h2>Forums</h2>
+		<p>
+		The requirements for the forum protocol are as follows:
+		</p>
+		<ul>
+			<li>The foræ must be arrange hierarchically, like what NNTP (sometimes erroneously called "Usenet") does. How exactly this hierarchy should be organized is a complex topic that will require a lot of thinking and which ties into an understanding of the nature of the universe itself…which is a long winded way of saying it's outside the scope of this essay.</li>
+			<li>Posts within subforæ must "cascade" upward to superordinate foræ; for example, a post in a.b.x would also be visible in a.b and a, but not in a.b.y or a.c.x or r.b.x.</li>
+			<li>Replies to posts need to be hierarchically threaded. Again, this is similar to what NNTP does, but unfortunately i think that an analog that would make more clear what i'm talking about is Reddit, that toxic sewer.</li>
+			<li>Cross-posting to multiple foræ needs to be a first-class feature. Users of NNTP have kinda bodged this into existence, but it's not super pretty and it's easy for people to accidentally break things, which happens often.</li>
+		</ul>
+		<h2>Chatrooms</h2>
+		<p>
+		The requirements for the chatroom protocol are as follows:
+		</p>
+		<ul>
+			<li>Channels must be arranges hierarchically, but unlike the forum protocol, they should NOT cascade upward.</li>
+			<li>It must be possible for somebody to view the history of the messages which have been sent in a channel, even if they weren't online when those messages were sent. You might think that this would be an obvious feature, and that's because it is, but IRC, which is closest to what i'm looking for in a chatroom protocol, doesn't do this.  Without external forces logging things, everything in IRC is ethereal, which is unnacceptable.</li>
+			<li>Replying to specific messages that other people have sent must be a first-class feature. But there mustn't be any more organization beyond this—one example of a protocol going too far with organization is the nightmare that is Discord's threading feature (based on personal experience). It's like an awkward amalgam that tries to be both a forum protocol and a chatroom protocol, only to be worse at both of them. On the other hand, having no reply system at all isn't very good either—in the culture of IRC, it's common to mention a username to reply to a message someone else sent, but i've often found myself needing to resort to using timestamps for extra precision. Based on personal experience, a reply system is a high-quality middle-ground of usefulness in organization in chatrooms (though personally, i think it should also be reverse-linked).</li>
+		</ul>
+		<h2>Blogs</h2>
+		<p>
+		The requirements for the blogging protocol are as follows:
+		</p>
+		<ul>
+			<li>There mustn't be any restrictions on the size of posts. The most egregious violator of this requirement is, of course, Twitter, with it's limit of just 280 characters.</li>
+			<li>Submissions to blogs must be a first-class feature (though of course, there's nothing stopping someone from just never posting anything submitted to their blog). Anonymous submissions must be permitted.</li>
+			<li>Re<i>ply</i>ing to a post should be considered a different thing from re<i>blog</i>ging a post. Based upon personal experience, these are two things that have distinctly different uses. Replies should not cascade in either direction.</li>
+			<li>There must be a tagging system for posts. Tumblr has what is currently the best tagging system that i know of for blogging protocols, being extraordinarily flexible and having synthesized a truly unique and great culture surrounding it. However, there are also merits to a more regulated tagging system (see below the point i list about tagging with regards to file hosts), where one can be absolutely certain that something tagged with something will have certain properties and tags are determined by community consensus. For this reason, i suggest that both systems coexist as separate systems—perhaps one could be called "labels" and the other keeps the name of "tags". A client for the protocol ought to show these as being separate systems, even if internally tags are just a subnamespace of labels, because i think it would be naïve to assume that a layman would use the systems correctly otherwise.</li>
+		</ul>
+		<h2>File hosts</h2>
+		<p>
+		The requirement for the file distribution protocol are as follows:
+		</p>
+		<ul>
+			<li>There must be no restrictions on the size of files, nor on the quantity of files one may submit.</li>
+			<li>It must be possible for one to stream files and obtain files in a lower quality.</li>
+			<li>It must be possible for titles and descriptions to be attached to files as part of the metadata tagging system described in the next point.</li>
+			<li>There must exist a strong, regulated, hierarchical, categorized metadata tagging system in place, with the tags attached to any particular file being determined through community consensus. Exactly how to perform the regulation of the tags is something i am uncertain about, but it seems to me that the best option would probably be to bake the tags into the specification for the protocol itself. Bizzarely, the metadata system i've seen that come closest to what i'm looking for is the one used on <i>e621.net</i> [WARNING:  that site contains sexually explicit content!], of all places, though i nevertheless feel as though it is quite imperfect; one particular qualm i have with it is its inability to apply tags to other tags, leading to vagueness—for example, if a post has the tags "cyan fur", "fox", and "wolf", this doesn't specify whether the fox or the wolf has the cyan fur, and the system has no way to do that without creating an entirely new tag. This inflexibility is bad, and i think it could be solved by allow hierarchical tagging.</li>
+		</ul>
+	</body>
+</html>

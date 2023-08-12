@@ -80,7 +80,7 @@ h3 {
 }
 
 .warning {
-	color: #d84; /* This is stupid—dark orange is just brown!  Technology Connections has a video on it:  https://youtu.be/wh4aWZRtTwU */
+	color: #d84;
 }
 
 .danger {
@@ -101,4 +101,27 @@ h3 {
 
 .subtitle {
 	font-size: 125%
+}
+
+hr {
+	content: "⁂"
+}
+
+figure.quote {
+	text-align: center;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+figure.quote > blockquote {
+	margin-bottom: 0.75ex;
+}
+
+figure.quote > figcaption {
+	text-align: left;
+	padding-left: 50%;
+}
+
+figure.quote > blockquote::before, figure.quote > blockquote::after {
+	content: "\""
 }
